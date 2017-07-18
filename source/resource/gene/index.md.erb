@@ -1,0 +1,54 @@
+---
+title: Gene
+layout: resource
+model: allele
+description: A genomic region related to a collection of transcript ReferenceSequences, given a name by one or more naming agencies.
+sequence_ontology: SO:0000704
+related_page_title: Gene
+related_page_url: /conceptual/gene
+schema: "/main/resources/clingen-xsd/gene.xsd"
+
+---
+
+
+Scope and Usage
+---------------
+
+The sequence ontology defines a "gene as a region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions."
+
+The current definition of gene is similar, but explicity allows for non-functional genes.  Furthermore, while the concept of a gene may include elements such as regulatory regions, version 0.1 of the allele model only relates genes to reference sequences for transcripts and genes (such as LRG), and will therefore not contain data on regulatory elements.
+
+Included under this definition of gene are:
+
++ Protein coding genes
++ Pseudogenes
++ Non-Coding RNA sequences
++ Computationally Predicted Genes
+
+There is no guarantee that a gene is ever transcribed, such as some computationally predicted genes or pseudogenes.   Furthermore, many genes are untranslated.
+
+A gene is identified by an external authority, typically HGNC, although the data model is configured to recognize identifiers from multiple authorities.
+
+Context
+-------
+
+The Gene resource is described by the following attributes:
+
+* identifer: the set of identifiers from external authorities that identify the Gene.
+* symbol: the string symbol identifying the gene.
+* name: the human readable name for a gene.
+* aliasSymbol: a list of alternative symbols used to identify the gene.
+
+Resource Model
+----------------
+
+[![Gene Resource Diagram](/images/GeneResource.svg){: .img-responsive}](/images/GeneResource.svg)
+
+Related Resources: [ReferenceSequence](/resource/reference_sequence/index.html)
+	
+Notes
+-----
+
+
+Formal Definitions
+------------------

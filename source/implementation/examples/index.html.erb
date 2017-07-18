@@ -1,0 +1,32 @@
+---
+title: Examples 
+layout: model
+model: allele
+skip_children: true
+
+---
+
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Resource</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% data.examples.each do |r| %>
+    <tr>
+      <td>
+	<%= link_to r['title'], "/implementation/examples/#{r['id']}.html" %>
+      </td>
+      <td>
+	<%= link_to r['resource'], "/resource/#{r['page']}" %>
+      </td>
+      <td>
+	<%= r['description'] %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

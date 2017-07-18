@@ -1,0 +1,26 @@
+<% wrap_layout :layout  do %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 col-md-3 sidebar">
+      <div class='nav nav-sidebar nav-sidebar-title'>
+      	<% link_to "https://clinicalgenome.org" do %>
+      		<%= image_tag 'clingen-doc-logo.png', width: "90%", height: "90%", alt: "ClinGen Documentation", class: "img-responsive" %>
+     	<% end %>
+  	  </div>
+      <ul class="nav nav-sidebar">
+        <%= link_with_local_index "Discussion", "/discussion/index.html" %>
+        <%= link_with_local_index "Implementation", "/implementation/index.html" %>
+        <%= link_with_local_index "Resource", "/resource/index.html" %>
+        <%= link_with_local_index "Conceptual", "/conceptual/index.html" %>
+      </ul>
+    </div>
+    <div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
+      <article>
+        <h1><%= current_page.data.title %></h1>
+        <hr class='col-sm-12' />
+        <%= yield %>
+      </article>
+    </div>
+  </div>
+</div>
+<% end %>
