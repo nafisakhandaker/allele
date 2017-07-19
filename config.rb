@@ -243,11 +243,11 @@ end
 
 end
 
-  set :css_dir, '/clingen-data-model.github.io/static-resource/stylesheets/'
-  
-  set :js_dir, '/clingen-data-model.github.io/static-resource/javascripts/'
-  
-  set :images_dir, '/clingen-data-model.github.io/static-resource/images/'
+  set :css_dir, 'clingen-data-model.github.io/static-resource/stylesheets/'
+    
+  set :js_dir, 'clingen-data-model.github.io/static-resource/javascripts/'
+    
+  set :images_dir, 'clingen-data-model.github.io/static-resource/images/'
 
 # Build-specific configuration
 configure :build do
