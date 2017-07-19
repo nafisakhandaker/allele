@@ -243,11 +243,11 @@ end
 
 end
 
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
+  set :css_dir, '/static-resource/stylesheets/'
+  
+  set :js_dir, '/static-resource/javascripts/'
+  
+  set :images_dir, '/static-resource/images/'
 
 # Build-specific configuration
 configure :build do
