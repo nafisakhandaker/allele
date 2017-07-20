@@ -250,7 +250,7 @@ end
 
 end
 
-  Enable Asset Hosts
+  #Enable Asset Hosts
   activate :asset_host
   
   set :asset_host do |asset|
