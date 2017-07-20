@@ -250,11 +250,11 @@ end
 
 end
 
-  set :css_dir, "https://nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/stylesheets/"
+  set :css_dir, "http://datamodel.clinicalgenome.org/stylesheets//stylesheets/"
       
-  set :js_dir, "https://nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/javascripts/"
+  set :js_dir, "http://datamodel.clinicalgenome.org/javascripts/"
       
-  set :images_dir, "https://nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/images/"
+  set :images_dir, "http://datamodel.clinicalgenome.org/images/"
 
 
 # Build-specific configuration
