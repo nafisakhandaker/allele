@@ -250,7 +250,7 @@ end
 
 end
 
-  set :css_dir, "http://datamodel.clinicalgenome.org/stylesheets//stylesheets/"
+  set :css_dir, "http://datamodel.clinicalgenome.org/stylesheets/"
       
   set :js_dir, "http://datamodel.clinicalgenome.org/javascripts/"
       
