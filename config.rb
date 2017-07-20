@@ -151,7 +151,7 @@ end
 
   def local_index(path)
     index = ""
-    #index = list_children(path) unless current_page.data.skip_children
+    index = list_children(path) unless current_page.data.skip_children
     unless current_page.data.skip_siblings
       index = list_siblings(path, index) if path_depth(path) > 1
     end
@@ -183,17 +183,17 @@ end
   end
 
   # Generate nested list of current element's children
-  #def list_children(parent_url)
-  #  depth = path_depth(parent_url)
-  #  children = sitemap.resources.select do |r|
-   #   r.url.include?(parent_url) && path_depth(r.url) == depth + 1
- #   end.sort_by { |r| r.path }
- #   return "" if children.size == 0
-  #  list = children.reduce("") do |a, e|
-   #   a << "<li>#{link_to_resource(e)}</li>\n"
-   # end
-   # "<ul>#{list}</ul>"
-  #end
+  def list_children(parent_url)
+    depth = path_depth(parent_url)
+    children = sitemap.resources.select do |r|
+      r.url.include?(parent_url) && path_depth(r.url) == depth + 1
+    end.sort_by { |r| r.path }
+    return "" if children.size == 0
+    list = children.reduce("") do |a, e|
+      a << "<li>#{link_to_resource(e)}</li>\n"
+    end
+    "<ul>#{list}</ul>"
+  end
 
   def model_name
     current_page.data.model ? current_page.data.model.capitalize : ""
