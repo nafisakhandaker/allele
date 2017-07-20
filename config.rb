@@ -250,11 +250,15 @@ end
 
 end
 
-  set :css_dir, "//datamodel.clinicalgenome.org/stylesheets/"
-      
-  set :js_dir, "//datamodel.clinicalgenome.org/javascripts/"
-      
-  set :images_dir, "//datamodel.clinicalgenome.org/images/"
+  # Enable Asset Hosts
+  activate :asset_host
+  
+  set :asset_host do |asset|
+    '//nafisakhandaker.github.io/clingen-static-resources/'.to_s
+  end
+  set :css_dir, 'stylesheets'
+  set :js_dir, 'javascripts'
+  set :images_dir, 'images'
 
 
 # Build-specific configuration
