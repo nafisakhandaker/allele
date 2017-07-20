@@ -86,6 +86,13 @@ helpers do
     end
     %(<li class="#{model}">#{link}</li>)
 end
+  def relative_link_to(text, url)
+      # Get current path
+          # Get path of url
+          # Get relative relation between paths
+          # Pass new data to the original link_to helper
+          link_to(text, relative_url)
+    end
 
   def local_link(text, path)
     if path == current_page.url
