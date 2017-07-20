@@ -11,10 +11,8 @@
     <title>
       <%= current_page.data.title || "ClinGen Data Model" %>
     </title>
-
-    <link href="https://nafisakhandaker.github.io/clingen-static-resources/stylesheets/bootstrap.css" rel="stylesheet" type = "text/css"/>
-    <link href="https://nafisakhandaker.github.io/clingen-static-resources/stylesheets/bootstrap-theme.css" rel="stylesheet" type = "text/css" />
-    <link href="https://nafisakhandaker.github.io/clingen-static-resources/stylesheets/brand2" rel="stylesheet" type = "text/css" />
+	
+    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "brand2" %>
     <% (current_page.data.append_css || []).each do |cssfile| %>
       <%= stylesheet_link_tag cssfile %>
     <% end %>
