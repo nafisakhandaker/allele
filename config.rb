@@ -151,7 +151,7 @@ end
 
   def local_index(path)
     index = ""
-    index = list_children(path) unless current_page.data.skip_children
+    #index = list_children(path) unless current_page.data.skip_children
     unless current_page.data.skip_siblings
       index = list_siblings(path, index) if path_depth(path) > 1
     end
