@@ -250,11 +250,12 @@ end
 
 end
 
-  set :css_dir, "https//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/stylesheets/"
-    
-  set :js_dir, "https//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/javascripts/"
-    
-  set :images_dir, "https//nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/images/"
+  set :css_dir, "https://nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/stylesheets/"
+      
+  set :js_dir, "https://nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/javascripts/"
+      
+  set :images_dir, "https://nafisakhandaker.github.io/clingen-data-model.github.io/static-resource/images/"
+
 
 # Build-specific configuration
 configure :build do
