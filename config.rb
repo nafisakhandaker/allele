@@ -250,11 +250,11 @@ end
 
 end
 
-  set :css_dir, "https://datamodel.clinicalgenome.org/stylesheets/"
+  set :css_dir, "//datamodel.clinicalgenome.org/stylesheets/"
       
-  set :js_dir, "https://datamodel.clinicalgenome.org/javascripts/"
+  set :js_dir, "//datamodel.clinicalgenome.org/javascripts/"
       
-  set :images_dir, "https://datamodel.clinicalgenome.org/images/"
+  set :images_dir, "//datamodel.clinicalgenome.org/images/"
 
 
 # Build-specific configuration
