@@ -183,17 +183,17 @@ end
   end
 
   # Generate nested list of current element's children
-  def list_children(parent_url)
-    depth = path_depth(parent_url)
-    children = sitemap.resources.select do |r|
-      r.url.include?(parent_url) && path_depth(r.url) == depth + 1
-    end.sort_by { |r| r.path }
-    return "" if children.size == 0
-    list = children.reduce("") do |a, e|
-      a << "<li>#{link_to_resource(e)}</li>\n"
-    end
-    "<ul>#{list}</ul>"
-  end
+  #def list_children(parent_url)
+  #  depth = path_depth(parent_url)
+  #  children = sitemap.resources.select do |r|
+   #   r.url.include?(parent_url) && path_depth(r.url) == depth + 1
+ #   end.sort_by { |r| r.path }
+ #   return "" if children.size == 0
+  #  list = children.reduce("") do |a, e|
+   #   a << "<li>#{link_to_resource(e)}</li>\n"
+   # end
+   # "<ul>#{list}</ul>"
+  #end
 
   def model_name
     current_page.data.model ? current_page.data.model.capitalize : ""
