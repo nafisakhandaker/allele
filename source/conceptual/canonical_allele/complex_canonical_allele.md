@@ -1,15 +1,3 @@
----
-title: ComplexCanonicalAllele
-layout: conceptual
-model: allele
-description: A stable identifier for a complex allele, defined as a series of two or more SimpleCanonicalAlleles that occur in cis.
-
----
-
-
-
-
-
 Scope and Usage
 ---------------
 
